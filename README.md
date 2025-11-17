@@ -1,0 +1,2 @@
+# EasyAcademy
+Aws study project
