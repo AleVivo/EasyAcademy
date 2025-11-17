@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: easyAcademy Backend
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+      database: ${MONGO_DATABASE}
+
+server:
+  port: ${SERVER_PORT:8080}
+
+clients:
+  identity:
+    url: ${IDENTITY_MS_URL:http://localhost:8080}
+  training:
+    url: ${TRAINING_MS_URL:http://localhost:8080}
+  organization:
+    url: ${ORGANIZATION_MS_URL:http://localhost:8080}
+  notification:
+    url: ${NOTIFICATION_MS_URL:http://localhost:808}
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+
+logging:
+  level:
+    com.easyacademy: ${LOG_LEVEL:DEBUG}

@@ -1,0 +1,7 @@
+{
+  "MONGO_URI": "mongodb+srv://democluster.nestk8l.mongodb.net/?appName=DemoCluster",
+  "MONGO_USERNAME": "readWrite_academy",
+  "MONGO_PASSWORD": "FoYyvtbQyMAwZMwF",
+  "MONGO_DATABASE": "easyacademy_development",
+  "SERVER_PORT": 8080
+}

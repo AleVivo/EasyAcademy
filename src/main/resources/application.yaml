@@ -1,3 +1,3 @@
 spring:
-  application:
-    name: easyAcademy Backend
+  profiles:
+    active: deploy
